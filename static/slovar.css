@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'milo';
+    src:url('/milo-VariableFont_wght.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    height: 45px;
+    background-color: rgb(231, 253, 209);
+}
+.stik {
+    margin-left: 10px;
+    margin-top: 10px;
+    color:#89d7a0;
+}
+.milo-home p, .milo-information p, .milo-uroki p,.milo-cartinka p, .milo-dictionary p {
+    border: dashed;
+    border-color: rgb(248, 218, 236);
+    margin-left: 40px;
+    border-width: thin;
+    border-radius: 20%;
+    background-color: rgb(231, 253, 209);
+    margin-top: 7px;
+    width:200px;
+    padding-top: 5px;
+    font-size: 14pt;
+    text-align:center;
+    border-bottom: 3px solid rgb(248, 218, 236);
+    box-shadow: 10px 10px 10px rgb(248, 218, 236);
+    font-style: italic;
+}
+.container3 {
+    height: 92.5vh;
+    background-color: rgb(231, 253, 209);
+    padding-top: 20px;
+}
+
+.card1, .card2 {
+    padding-left: 90px;
+    
+}
+.card2 {
+    display: flex;
+}
+.jisla > img {
+    width: 130px;
+    margin-top: 3px;
+    cursor:grab;
+}
+.ludi > img {
+    width: 90px;
+    cursor:grab;
+}
+.ludi {
+    padding-left: 130px;
+}
+.semya > img {
+    width: 80px;
+    cursor:grab;
+}
+.semya {
+    padding-left: 155px;
+}
+.juvstva {
+    padding-left: 150px;
+}
+.juvstva > img {
+    width: 90px;
+    cursor:grab;
+}
+.eda {
+    padding-left: 150px;
+}
+.eda > img {
+    width: 90px;
+    cursor:grab;
+}
+.j1 {
+    margin-left: 40px;
+    font-size: 14pt;
+    font-style: italic;
+}
+.l1 {
+    margin-left: 200px;
+    font-size: 14pt;
+    font-style: italic;
+}
+.s1 {
+    margin-left: 195px;
+    font-size: 14pt;
+    font-style: italic;
+}
+.j2 {
+    margin-left: 140px;
+    font-size: 14pt;
+    font-style: italic;
+}
+.e1 {
+    margin-left: 160px;
+    font-size: 14pt;
+    font-style: italic;
+}
