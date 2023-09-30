@@ -7,13 +7,31 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container {
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; 
+    * при display: flex; меняет направление блоков внутри
+     - column сверху вниз
+     - row слева направо
+    */
+    flex-direction: column;
+}
+.header {
     display: flex;
     height: 45px;
     background-color: rgb(231, 253, 209);
+    
+    z-index: 1;
 }
-.container2 {
-    height: 92.5vh;
+.content {
+    /* 
+    flex-grow: 1; 
+    * при display: flex; дочернему элементу можно присвоить это значение
+        оно означает "забрать все свободное место родителя"
+     */
+    flex-grow: 1;
     background-color: rgb(231, 253, 209);
 }
 .container3 {
@@ -25,7 +43,7 @@
     margin-top: 10px;
     color:#89d7a0;
 }
-.milo-home p, .milo-information p, .milo-uroki p,.milo-cartinka p, .milo-dictionary p {
+.header p {
     border: dashed;
     border-color: rgb(248, 218, 236);
     margin-left: 40px;
@@ -41,8 +59,17 @@
     box-shadow: 10px 10px 10px rgb(248, 218, 236);
     font-style: italic;
 }
+.header-menu-link {
+    color:#75b688;
+    cursor:grab; 
+    text-decoration: none;
+}
+.header-menu-link:hover {
+    text-shadow: 0px 0px 1px grey;
+}
 .card p {
     margin-left: 180px;
     padding-top: 27px;
 }
+
 
