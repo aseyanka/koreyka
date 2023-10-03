@@ -1,0 +1,9 @@
+.card1 p {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 50pt;
+}
+.card1 {
+    border: dashed;
+    padding-right: 20px;
+}

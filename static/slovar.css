@@ -1,0 +1,78 @@
+
+.card1, .card2 {
+    padding-left: 90px;
+    
+}
+.card2 {
+    display: flex;
+}
+.jisla > img {
+    width: 130px;
+    margin-top: 3px;
+    cursor:grab;
+}
+.ludi > img {
+    width: 90px;
+    cursor:grab;
+}
+.ludi {
+    padding-left: 130px;
+}
+.semya > img {
+    width: 80px;
+    cursor:grab;
+}
+.semya {
+    padding-left: 155px;
+}
+.juvstva {
+    padding-left: 150px;
+}
+.juvstva > img {
+    width: 90px;
+    cursor:grab;
+}
+.eda {
+    padding-left: 150px;
+}
+.eda > img {
+    width: 90px;
+    cursor:grab;
+}
+
+.j1 {
+    margin-left: 40px;
+    font-size: 14pt;
+    font-style: italic;
+}
+.l1 {
+    margin-left: 200px;
+    font-size: 14pt;
+    font-style: italic;
+}
+.s1 {
+    margin-left: 195px;
+    font-size: 14pt;
+    font-style: italic;
+}
+.j2 {
+    margin-left: 140px;
+    font-size: 14pt;
+    font-style: italic;
+}
+.e1 {
+    margin-left: 160px;
+    font-size: 14pt;
+    font-style: italic;
+}
+.l1 {
+    margin-left: 200px;
+    font-size: 14pt;
+    font-style: italic;
+}
+
+.j2, .e1, .l1{
+    margin-left: 160px;
+    font-size: 14pt;
+    font-style: italic;
+}
