@@ -2,8 +2,6 @@ const express = require("express")
 const path = require('path')
 
 const static = path.resolve(__dirname, 'static')
-const home = path.resolve(__dirname, 'public', 'home', 'index.html')
-const Information = path.resolve(__dirname, 'public', 'Information.html')
 const uroki = path.resolve(__dirname, 'public', 'uroki.html')
 const cartinka = path.resolve(__dirname, 'public', 'cartinka.html')
 const dictionary = path.resolve(__dirname, 'public', 'slovar', 'dictionary.html')
@@ -17,12 +15,16 @@ const app = express()
 app.use(express.static(static))
 const PORT = 3000
 
+const handlebars = require("express-handlebars");
+app.engine('handlebars', handlebars.engine());
+app.set('view engine', 'handlebars');
+
 app.get("/", function(request, response){
-    response.sendFile(home);
+    response.render('home/index');
 })
 
-app.get("/Information", function(request, response){
-    response.sendFile(Information);
+app.get("/information", function(request, response){
+    response.render('information');
 })
 
 app.get("/uroki", function(request,response){
