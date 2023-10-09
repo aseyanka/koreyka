@@ -2,8 +2,6 @@ const express = require("express")
 const path = require('path')
 
 const static = path.resolve(__dirname, 'static')
-const uroki = path.resolve(__dirname, 'public', 'uroki.html')
-const cartinka = path.resolve(__dirname, 'public', 'cartinka.html')
 const dictionary = path.resolve(__dirname, 'public', 'slovar', 'dictionary.html')
 const jisla = path.resolve(__dirname, 'public', 'slovar', 'jisla.html')
 const ludi = path.resolve(__dirname, 'public', 'slovar', 'ludi.html')
@@ -28,11 +26,11 @@ app.get("/information", function(request, response){
 })
 
 app.get("/uroki", function(request,response){
-    response.sendFile(uroki);
+    response.render('uroki');
 })
 
 app.get("/cartinka", function(request,response){
-    response.sendFile(cartinka);
+    response.render('cartinka');
 })
 
 app.get("/dictionary", function(request,response){
