@@ -1,51 +1,9 @@
-@font-face {
-    font-family: 'milo';
-    src:url('/milo-VariableFont_wght.ttf');
+.card-num {
+  border: dashed;
+  padding-right: 20px;
 }
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.container {
-    display: flex;
-    height: 45px;
-    background-color: rgb(231, 253, 209);
-}
-.container2 {
-    height: 92.5vh;
-    background-color: rgb(231, 253, 209);
-    padding-top: 20px;
-    padding-left: 50px;
-    display: flex;
-}
-.stik {
-    margin-left: 10px;
-    margin-top: 10px;
-    color:#89d7a0;
-}
-.milo-home p, .milo-information p, .milo-uroki p,.milo-cartinka p, .milo-dictionary p {
-    border: dashed;
-    border-color: rgb(248, 218, 236);
-    margin-left: 40px;
-    border-width: thin;
-    border-radius: 20%;
-    background-color: rgb(231, 253, 209);
-    margin-top: 7px;
-    width:200px;
-    padding-top: 5px;
-    font-size: 14pt;
-    text-align:center;
-    border-bottom: 3px solid rgb(248, 218, 236);
-    box-shadow: 10px 10px 10px rgb(248, 218, 236);
-    font-style: italic;
-}
-.card1 p {
-    padding-left: 10px;
-    padding-top: 10px;
-    font-size: 50pt;
-}
-.card1 {
-    border: dashed;
-    padding-right: 20px;
+.card-num p {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 50pt;
 }
