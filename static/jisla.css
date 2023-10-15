@@ -1,9 +1,18 @@
-.card-num {
-  border: dashed;
-  padding-right: 20px;
+.tr,
+th,
+td {
+  border: black 1px solid;
+  padding: 10px;
+  font-size: 20pt;
+  font-style: italic;
 }
-.card-num p {
-  padding-left: 10px;
-  padding-top: 10px;
-  font-size: 50pt;
+.li {
+  margin-left: 20px;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.audio {
+  cursor: grab;
 }

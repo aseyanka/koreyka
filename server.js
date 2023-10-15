@@ -28,13 +28,7 @@ app.get("/cartinka", function (request, response) {
 });
 
 app.get("/dictionary", function (request, response) {
-  let context = {
-    garry: "ПОТНЫЙ",
-    chisla: "qwe123123",
-    spisok: ["Первая фраза", "вторая фраза", "третья фраза"],
-  };
-
-  response.render("slovar/dictionary", context);
+  response.render("slovar/dictionary");
 });
 
 app.get("/jisla", function (request, response) {
