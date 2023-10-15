@@ -3,11 +3,6 @@ const path = require("path");
 
 const static = path.resolve(__dirname, "static");
 
-const ludi = path.resolve(__dirname, "public", "slovar", "ludi.html");
-const semya = path.resolve(__dirname, "public", "slovar", "semya.html");
-const juvstva = path.resolve(__dirname, "public", "slovar", "juvstva.html");
-const eda = path.resolve(__dirname, "public", "slovar", "eda.html");
-
 const app = express();
 app.use(express.static(static));
 const PORT = 3000;
@@ -32,36 +27,35 @@ app.get("/cartinka", function (request, response) {
   response.render("cartinka");
 });
 
-
 app.get("/dictionary", function (request, response) {
   let context = {
-    garry: 'ПОТНЫЙ',
-    chisla: 'qwe123123',
-    spisok: ['Первая фраза', 'вторая фраза', 'третья фраза']
-  }
+    garry: "ПОТНЫЙ",
+    chisla: "qwe123123",
+    spisok: ["Первая фраза", "вторая фраза", "третья фраза"],
+  };
 
   response.render("slovar/dictionary", context);
-})
+});
 
-// app.get("/jisla", function (request, response) {
-//   response.render("slovar/jisla");
-// });
+app.get("/jisla", function (request, response) {
+  response.render("slovar/jisla");
+});
 
-// app.get("/ludi", function (request, response) {
-//   response.sendFile(ludi);
-// });
+app.get("/ludi", function (request, response) {
+  response.render("slovar/ludi");
+});
 
-// app.get("/semya", function (request, response) {
-//   response.sendFile(semya);
-// });
+app.get("/semya", function (request, response) {
+  response.render("slovar/semya");
+});
 
-// app.get("/juvstva", function (request, response) {
-//   response.sendFile(juvstva);
-// });
+app.get("/juvstva", function (request, response) {
+  response.render("slovar/juvstva");
+});
 
-// app.get("/eda", function (request, response) {
-//   response.sendFile(eda);
-// });
+app.get("/eda", function (request, response) {
+  response.render("slovar/eda");
+});
 
 app.listen(PORT, function () {
   console.log("чтобы закрыть нажмите ctrl + c");
