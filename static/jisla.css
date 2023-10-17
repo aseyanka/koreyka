@@ -1,18 +1,29 @@
 .tr,
 th,
 td {
-  border: black 1px solid;
+  border: #75b688 10px double;
   padding: 10px;
   font-size: 20pt;
   font-style: italic;
+  border-width: medium;
+  background-color: rgb(231, 253, 209);
+  box-shadow: 10px 10px 10px rgb(248, 218, 236);
 }
 .li {
   margin-left: 20px;
 }
 .table {
-  border-collapse: collapse;
+  border-collapse: separate;
   width: 100%;
 }
 .audio {
   cursor: grab;
+}
+.tr,
+th {
+  color: #416e4f;
+}
+.li,
+td {
+  color: #416e4f;
 }
