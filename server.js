@@ -35,8 +35,8 @@ app.get("/jisla", function (request, response) {
   response.render("slovar/jisla");
 });
 
-app.get("/ludi", function (request, response) {
-  response.render("slovar/ludi");
+app.get("/cveta", function (request, response) {
+  response.render("slovar/cveta");
 });
 
 app.get("/semya", function (request, response) {
